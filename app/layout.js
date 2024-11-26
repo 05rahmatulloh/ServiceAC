@@ -81,26 +81,29 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
         <script
+          defer
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-10857947855"
         ></script>
 
-        <script async src="js/jquery-3.4.1.min.js"></script>
-        <script async src="js/bootstrap.js"></script>
+        <script defer async src="js/jquery-3.4.1.min.js"></script>
+        <script defer async src="js/bootstrap.js"></script>
         <script
+          defer
           async
           src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         ></script>
-        <script async src="js/custom.js"></script>
+        <script defer async src="js/custom.js"></script>
         <script
+          defer
           async
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"
         ></script>
         <script
+          defer
           async
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-          crossOrigin="anonymous"
         ></script>
       </body>
     </html>
