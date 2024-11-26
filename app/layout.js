@@ -20,8 +20,81 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta
+          name="keywords"
+          content="service AC di batam,Service AC terdekat, Service AC terbaik di batam"
+        />
+        <meta
+          name="description"
+          content="Cipta Teknik AC menyediakan layanan Service AC terbaik di Batam. Ahli dalam perawatan, perbaikan, dan pemasangan AC, kami hadir untuk kebutuhan Anda. Hubungi kami untuk layanan Service AC terdekat, terpercaya, dan berkualitas!"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        ></link>
+        <meta name="author" content="Cipta Teknik AC" />
+        <link rel="icon" href="images/logooo.png" type="image/x-icon" />
+        <title>Service AC Profesional</title>
+
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="css/font-awesome.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossOrigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+
+        <style>
+          {`
+      a {
+        text-decoration: none;
+      }
+
+      @media only screen and (max-width: 600px) {
+        #waa {
+          width: 100px !important;
+        }
+      }
+    `}
+        </style>
+      </head>
+
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-10857947855"
+        ></script>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossOrigin="anonymous"
+        ></script>
       </body>
     </html>
   );
