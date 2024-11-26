@@ -326,7 +326,7 @@ function Home() {
           </div>
           <div className="row" style={{ height: "600px", overflow: "auto" }}>
             {index.map((i) => (
-              <div className="col-sm-6 col-md-4 mx-auto">
+              <div key={i} className="col-sm-6 col-md-4 mx-auto">
                 <figure className="figure">
                   <img
                     src={`images/gambar (${i}).jpg`}
