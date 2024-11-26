@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Script from "next/script";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -80,36 +80,28 @@ export default function RootLayout({ children }) {
 
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
-        <Script
-          strategy="lazyOnload"
+        <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-10857947855"
-        ></Script>
+        ></script>
 
-        <Script
+        <script async src="js/jquery-3.4.1.min.js"></script>
+        <script async src="js/bootstrap.js"></script>
+        <script
           async
-          strategy="lazyOnload"
-          src="js/jquery-3.4.1.min.js"
-        ></Script>
-        <Script async strategy="lazyOnload" src="js/bootstrap.js"></Script>
-        <Script
-          async
-          strategy="lazyOnload"
           src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        ></Script>
-        <Script async strategy="lazyOnload" src="js/custom.js"></Script>
-        <Script
+        ></script>
+        <script async src="js/custom.js"></script>
+        <script
           async
-          strategy="lazyOnload"
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"
-        ></Script>
-        <Script
+        ></script>
+        <script
           async
-          strategy="lazyOnload"
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
           crossOrigin="anonymous"
-        ></Script>
+        ></script>
       </body>
     </html>
   );

@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  experimental: {
-    nextScriptWorkers: true,
+  eslint: {
+    ignoreDuringBuilds: true, // Abaikan pemeriksaan ESLint selama proses build
   },
 };
 

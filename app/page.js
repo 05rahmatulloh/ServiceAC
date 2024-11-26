@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 const index = [1, 2, 3, 4, 5, 6, 7, 8];
 function Home() {
@@ -8,14 +9,14 @@ function Home() {
       <div className="fixed-bottom">
         <div className="position-fixed" style={{ zIndex: 999 }}>
           <div className="position-fixed bottom-0 end-0">
-            <a href="https://wa.me/+6281261771623?text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Anda.">
+            <Link href="https://wa.me/+6281261771623?text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Anda.">
               <img
                 src="images/wa.png"
                 style={{ width: "150px" }}
                 id="waa"
                 alt="WhatsApp"
               />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -38,9 +39,9 @@ function Home() {
                     backgroundImage: "url('images/logoo.png')",
                   }}
                 ></div>
-                <a className="navbar-brand" href="/">
+                <Link className="navbar-brand" href="/">
                   <span style={{ fontSize: "29px" }}>Cipta Teknik AC</span>
-                </a>
+                </Link>
 
                 <button
                   className="navbar-toggler"
@@ -60,30 +61,30 @@ function Home() {
                 >
                   <ul className="navbar-nav">
                     <li className="nav-item active">
-                      <a className="nav-link" href="/">
+                      <Link className="nav-link" href="/">
                         Home <span className="sr-only">(current)</span>
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#about">
+                      <Link className="nav-link" href="#about">
                         Tentang
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#service">
+                      <Link className="nav-link" href="#service">
                         Layanan
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#galeri">
+                      <Link className="nav-link" href="#galeri">
                         Galeri
-                      </a>
+                      </Link>
                     </li>
 
                     <li className="nav-item">
-                      <a className="nav-link" href="#alamat">
+                      <Link className="nav-link" href="#alamat">
                         Alamat
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -102,9 +103,9 @@ function Home() {
                     Service AC Terpercaya di Batam
                   </h1>
                   <p>Spesialis Perbaikan Ac Dan Service Mesin Cuci.</p>
-                  <a href="https://wa.me/+6281261771623?text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Anda.">
+                  <Link href="https://wa.me/+6281261771623?text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Anda.">
                     Hubungi
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-6">
@@ -147,13 +148,13 @@ function Home() {
                   pekerjaan dimulai, ada paket harga yang menarik dari kami
                   dalam service maupun intalasi/pemasangan baru or second.
                 </p>
-                <a
+                <Link
                   href="https://wa.me/+6281261771623?text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Anda."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Hubungi kami
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-7 col-md-6">
@@ -308,13 +309,13 @@ function Home() {
             </div>
           </div>
           <div className="btn-box">
-            <a
+            <Link
               href="https://wa.me/+6281261771623?text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Anda."
               target="_blank"
               rel="noopener noreferrer"
             >
               Hubungi kami
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -326,9 +327,13 @@ function Home() {
           </div>
           <div className="row" style={{ height: "600px", overflow: "auto" }}>
             {index.map((i) => (
-              <div key={i} className="col-sm-6 col-md-4 mx-auto">
-                <figure className="figure">
+              <div
+                key={Math.random() * i}
+                className="col-sm-6 col-md-4 mx-auto"
+              >
+                <figure className="figure" key={i}>
                   <img
+                    key={i}
                     src={`images/gambar (${i}).jpg`}
                     className="figure-img img-fluid rounded"
                     alt="Gallery Image"
@@ -338,13 +343,13 @@ function Home() {
             ))}
           </div>
           <div className="btn-box">
-            <a
+            <Link
               href="https://wa.me/+6281261771623?text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Anda."
               target="_blank"
               rel="noopener noreferrer"
             >
               Hubungi kami
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -488,34 +493,34 @@ function Home() {
               <div className="info_items">
                 <div className="row">
                   <div className="col-md-4">
-                    <a href="https://www.google.com/maps/place/Ruko+Niaga+Taras+Batam+Centre/@1.118242,104.093884,16z/data=!4m6!3m5!1s0x31d988a224147be3:0x80b4fba053354a61!8m2!3d1.1182422!4d104.093884!16s%2Fg%2F11hc_dpwb1?hl=en&entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D">
+                    <Link href="https://www.google.com/maps/place/Ruko+Niaga+Taras+Batam+Centre/@1.118242,104.093884,16z/data=!4m6!3m5!1s0x31d988a224147be3:0x80b4fba053354a61!8m2!3d1.1182422!4d104.093884!16s%2Fg%2F11hc_dpwb1?hl=en&entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D">
                       <div className="item">
                         <div className="img-box">
                           <i className="bi bi-geo-alt-fill"></i>
                         </div>
                         <p>Lokasi</p>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                   <div className="col-md-4">
-                    <a href="tel:081261771623">
+                    <Link href="tel:081261771623">
                       <div className="item">
                         <div className="img-box">
                           <i className="bi bi-telephone-fill"></i>
                         </div>
                         <p>Telp: 081261771623</p>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                   <div className="col-md-4">
-                    <a href="mailto:ronaldosefri22@gmail.com">
+                    <Link href="mailto:ronaldosefri22@gmail.com">
                       <div className="item">
                         <div className="img-box">
                           <i className="bi bi-envelope-fill"></i>
                         </div>
                         <p>Email: ronaldosefri22@gmail.com</p>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
