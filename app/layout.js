@@ -86,18 +86,25 @@ export default function RootLayout({ children }) {
           src="https://www.googletagmanager.com/gtag/js?id=AW-10857947855"
         ></Script>
 
-        <Script strategy="lazyOnload" src="js/jquery-3.4.1.min.js"></Script>
-        <Script strategy="lazyOnload" src="js/bootstrap.js"></Script>
         <Script
+          async
+          strategy="lazyOnload"
+          src="js/jquery-3.4.1.min.js"
+        ></Script>
+        <Script async strategy="lazyOnload" src="js/bootstrap.js"></Script>
+        <Script
+          async
           strategy="lazyOnload"
           src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         ></Script>
-        <Script strategy="lazyOnload" src="js/custom.js"></Script>
+        <Script async strategy="lazyOnload" src="js/custom.js"></Script>
         <Script
+          async
           strategy="lazyOnload"
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"
         ></Script>
         <Script
+          async
           strategy="lazyOnload"
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
