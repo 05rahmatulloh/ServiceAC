@@ -100,7 +100,7 @@ function Home() {
               <div className="col-md-6">
                 <div className="detail-box">
                   <h1 style={{ fontSize: "46px" }}>
-                    Service AC Terpercaya di Batam
+                    Service AC  di Batam
                   </h1>
                   <p>Spesialis Perbaikan Ac Dan Service Mesin Cuci.</p>
                   <Link href="https://wa.me/+6281261771623?text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Anda.">
